@@ -1,24 +1,47 @@
 /* css vars */
 :root {
-    --col-1: #362661;
-    --col-2: #FA5E91;
-    --col-3: #7FAfEE;
-    --col-4: #CAC4CE;
-    --col-5: #F6EDFF;
+    --col-1-25: #36266144;
+    --col-2-25: #FA5E9144;
+    --col-3-25: #7FAfEE44;
+    --col-4-25: #CAC4CE44;
+    --col-5-25: #F6EDFF44;
 
-    --primary-color: var(--col-2);
-    --secondary-color: var(--col-3);
-    --background-color: var(--col-1);
-    --text-color: var(--col-5);
-    --text-secondary-color: var(--col-4);
+    --col-1-50: #36266188;
+    --col-2-50: #FA5E9188;
+    --col-3-50: #7FAfEE88;
+    --col-4-50: #CAC4CE88;
+    --col-5-50: #F6EDFF88;
+
+    --col-1-75: #362661CC;
+    --col-2-75: #FA5E91CC;
+    --col-3-75: #7FAfEECC;
+    --col-4-75: #CAC4CECC;
+    --col-5-75: #F6EDFFCC;
+
+    --col-1-100: #362661;
+    --col-2-100: #FA5E91;
+    --col-3-100: #7FAfEE;
+    --col-4-100: #CAC4CE;
+    --col-5-100: #F6EDFF;
+
+    --primary-color: var(--col-2-100);
+    --primary-color-50: var(--col-2-50);
+    --secondary-color: var(--col-3-100);
+
+    --background-color: var(--col-1-100);
+    --background-secondary-color: var(--col-3-25);
+
+    --text-color: var(--col-5-100);
+    --text-secondary-color: var(--col-4-100);
 }
 
+/* general styling */
 body {
     font-family: 'Quicksand', sans-serif;
     color: var(--text-color);
     margin: 0;
     background-color: var(--background-color);
-    min-width: fit-content;
+    min-width: min-content;
 }
 
 a {
@@ -44,6 +67,17 @@ p {
     font-size: 1.25rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+hr {
+    border: 0.15rem solid;
+    border-radius: 1rem;
+    color: var(--secondary-color);
+    margin: 0;
+}
+
 .page-container {
     width: 60vw;
     min-height: 90vh;
@@ -52,6 +86,12 @@ p {
     flex-direction: column;
 }
 
+.hidden {
+    visibility: hidden;
+    display: none;
+}
+
+/* header styling */
 header {
     font-family: 'Dosis', sans-serif;
     margin: 2rem 0 1rem 0;
@@ -66,13 +106,18 @@ header * {
 header h1 {
     font-size: 4rem;
     color: var(--primary-color);
+    width: min-content;
+    white-space: nowrap;
 }
 
 header h2 {
     font-size: 2rem;
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    width: min-content;
+    white-space: nowrap;
 }
 
+/* main content styling */
 main {
     flex-grow: 1;
 }
@@ -82,10 +127,57 @@ main h3 {
     color: var(--secondary-color);
 }
 
+.showcase-display {
+    background-color: var(--background-secondary-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 80%;
+    margin: 0 auto 0 auto;
+    overflow: hidden;
+}
+
+.showcase-display-tab-buttons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 1rem 0 1rem;
+}
+
+.showcase-display-tab-buttons-container button {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text-color);
+    font-size: 1.75rem;
+    border: none;
+    border-radius: 1rem 1rem 0 0;
+    background-color: var(--primary-color-50);
+    transition: background-color 0.2s;
+    margin: 0 0.2rem 0 0.2rem;
+    padding: 0.5rem;
+}
+
+.showcase-display-tab-buttons-container button:hover, .showcase-display-tab-button-active {
+    background-color: var(--primary-color) !important;
+    transition: background-color 0.2s;
+}
+
+.showcase-display-tab-buttons-container button:hover {
+    cursor: pointer;
+}
+
+.showcase-display hr {
+    margin: 0;
+}
+
+#showcase-display-content-container article h4 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+/* footer styling */
 footer {
     width: 35vw;
     min-width: min-content;
-    margin: 0 auto 0 auto;
+    margin: 5rem auto 0 auto;
     color: var(--text-secondary-color);
 }
 

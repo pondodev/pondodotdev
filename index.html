@@ -7,11 +7,13 @@
         <meta name="author" content="Daniel Coady" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>《daniel coady》 developer</title>
+        <title>daniel coady.</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> 
         <link href="styles.css" type="text/css" rel="stylesheet" />
+
+        <script src="index.js"></script>
     </head>
 
     <body>
@@ -34,18 +36,44 @@
                     <h3>what i do</h3>
                     <p>check out below just a few of the things i do, both professionally and as a hobby!</p>
 
-                    <article id="showcase-display">
-                        <p>
-                            there will be some stuff here soon i swear just give me some time i can make it happen
-                            i swear just give me some time in the meantime have this lovely picture
-                        </p>
-                        <img src="veryniceimage.jpg" alt="REALLY NICE IMAGE" />
-                    </article>
+                    <div class="showcase-display">
+                        <div class="showcase-display-tab-buttons-container">
+                            <button onclick="showContent('fullstack')" id="btn-fullstack">full stack dev.</button>
+                            <button onclick="showContent('gamedev')" id="btn-gamedev">game dev.</button>
+                            <button onclick="showContent('3dart')" id="btn-3dart">3D art.</button>
+                        </div>
+                        <hr />
+
+                        <!-- TODO: animate collapsing/expanding smoothly -->
+                        <div id="showcase-display-content-container">
+                            <!-- content will be here -->
+                            <article id="showcase-display-fullstack">
+                                <h4>full stack</h4>
+                                <p>insert some content here</p>
+                            </article>
+
+                            <article id="showcase-display-gamedev">
+                                <h4>game dev</h4>
+                                <p>insert some content here</p>
+                                <p>insert some content here</p>
+                            </article>
+
+                            <article id="showcase-display-3dart">
+                                <h4>3d art</h4>
+                                <p>insert some content here</p>
+                                <p>insert some content here</p>
+                                <p>insert some content here</p>
+                            </article>
+                        </div>
+                    </div>
                 </section>
             </main>
 
             <footer>
-                <p>made by daniel coady 2020 // source code available <a href="#">here</a></p>
+                <p>
+                    made by daniel coady 2020 // source code available
+                    <a href="https://github.com/pondodev/pondodotdev" target="_blank">here</a>
+                </p>
             </footer>
         </div>
     </body>

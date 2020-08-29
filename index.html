@@ -10,37 +10,51 @@
         <title>daniel coady.</title>
 
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet" /> 
         <link href="styles.css" type="text/css" rel="stylesheet" />
 
         <script src="index.js"></script>
     </head>
 
     <body>
-        <div class="page-container">
+        <div id="no-js">
+            <h1>Uh oh.</h1>
+            <h2>Looks like you don't have JavaScript enabled in your browser :(</h2>
+            <p>
+                I swear there's nothing scary, just some light stuff! So please enable JavaScript in your browser to continue :)
+            </p>
+        </div>
+
+        <div id="page-container" class="hidden">
             <header>
-                <h1>daniel coady.</h1>
-                <h2>full stack dev. game dev hobbyist. 3D artist.</h2>
+                <h1>Daniel Coady.</h1>
+                <h2>Full Stack Dev. Game Dev Hobbyist. 3D Artist.</h2>
             </header>
 
             <main>
                 <section id="introduction">
-                    <h3>hey, i'm dan.</h3>
+                    <h3>Hey, I'm Dan.</h3>
                     <p>
-                        i'm a software developer from melbourne, australia. day to day i work as a full stack developer
-                        and in my spare time i work on projects to learn more about technology, new and old.
+                        I'm a software developer from Melbourne, Australia. day to day I work as a full stack developer
+                        and in my spare time I work on projects to learn more about technology, new and old.
                     </p>
                 </section>
 
                 <section id="showcase">
-                    <h3>what i do</h3>
-                    <p>check out below just a few of the things i do, both professionally and as a hobby!</p>
+                    <h3>What I Do</h3>
+                    <p>Check out below just a few of the things I do, both professionally and as a hobby!</p>
 
                     <div class="showcase-display">
                         <div class="showcase-display-tab-buttons-container">
-                            <button onclick="showContent('fullstack')" id="btn-fullstack">full stack dev.</button>
-                            <button onclick="showContent('gamedev')" id="btn-gamedev">game dev.</button>
-                            <button onclick="showContent('3dart')" id="btn-3dart">3D art.</button>
+                            <button onclick="showContent('fullstack')" id="btn-fullstack" class="showcase-display-tab-button-active">
+                                Full Stack Dev.
+                            </button>
+                            <button onclick="showContent('gamedev')" id="btn-gamedev">
+                                Game Dev.
+                            </button>
+                            <button onclick="showContent('3dart')" id="btn-3dart">
+                                3D Art.
+                            </button>
                         </div>
                         <hr />
 
@@ -48,24 +62,43 @@
                         <div id="showcase-display-content-container">
                             <!-- content will be here -->
                             <article id="showcase-display-fullstack">
-                                <h4>full stack</h4>
+                                <h4>Full Stack</h4>
                                 <p>insert some content here</p>
                             </article>
 
-                            <article id="showcase-display-gamedev">
-                                <h4>game dev</h4>
+                            <article id="showcase-display-gamedev" class="hidden">
+                                <h4>Game Dev</h4>
                                 <p>insert some content here</p>
                                 <p>insert some content here</p>
                             </article>
 
-                            <article id="showcase-display-3dart">
-                                <h4>3d art</h4>
+                            <article id="showcase-display-3dart" class="hidden">
+                                <h4>3D Art</h4>
                                 <p>insert some content here</p>
                                 <p>insert some content here</p>
                                 <p>insert some content here</p>
                             </article>
                         </div>
                     </div>
+                </section>
+
+                <section id="contact-me">
+                    <h3>Contact Me</h3>
+                    <p>
+                        <!-- TODO: email obfuscation -->
+                        If you'd like to get in touch for contract work or similar, please don't hesitate to email
+                        me! I can be reached <a class="email" href="#">here</a>.
+                    </p>
+
+                    <p>
+                        I'm also around online in various places if you'd like to check me out:
+                    </p>
+
+                    <ul>
+                        <li><a href="https://github.com/pondodev" target="_blank">GitHub</a></li>
+                        <li><a href="https://gitlab.com/pondodev" target="_blank">GitLab</a></li>
+                        <li><a href="https://pondodev.itch.io/" target="_blank">itch.io</a></li>
+                    </ul>
                 </section>
             </main>
 

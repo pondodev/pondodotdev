@@ -1,0 +1,96 @@
+/* css vars */
+:root {
+    --col-1: #362661;
+    --col-2: #FA5E91;
+    --col-3: #7FAfEE;
+    --col-4: #CAC4CE;
+    --col-5: #F6EDFF;
+
+    --primary-color: var(--col-2);
+    --secondary-color: var(--col-3);
+    --background-color: var(--col-1);
+    --text-color: var(--col-5);
+    --text-secondary-color: var(--col-4);
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text-color);
+    margin: 0;
+    background-color: var(--background-color);
+    min-width: fit-content;
+}
+
+a {
+    color: var(--primary-color);
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: var(--secondary-color);
+    transition: color 0.2s;
+}
+
+a:active {
+    color: var(--text-color);
+    transition: color 0.2s;
+}
+
+img {
+    border-radius: 1rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+.page-container {
+    width: 60vw;
+    min-height: 90vh;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-family: 'Dosis', sans-serif;
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    flex-direction: row;
+}
+
+header * {
+    margin: 0;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+header h2 {
+    font-size: 2rem;
+    color: var(--secondary-color)
+}
+
+main {
+    flex-grow: 1;
+}
+
+main h3 {
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+footer {
+    width: 35vw;
+    min-width: min-content;
+    margin: 0 auto 0 auto;
+    color: var(--text-secondary-color);
+}
+
+footer p {
+    width: min-content;
+    margin: 0 auto 0 auto;
+    white-space: nowrap;
+}

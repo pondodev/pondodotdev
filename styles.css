@@ -33,6 +33,8 @@
 
     --text-color: var(--col-5-100);
     --text-secondary-color: var(--col-4-100);
+
+    --shadow--color: #88888888;
 }
 
 /* general styling */
@@ -47,17 +49,25 @@ body {
 
 a {
     color: var(--primary-color);
-    transition: color 0.2s;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    transition: all 0.2s ease-in-out;
 }
 
 a:hover {
-    color: var(--secondary-color);
-    transition: color 0.2s;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    box-shadow: 0.3rem 0.3rem var(--shadow--color);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 a:active {
     color: var(--text-color);
-    transition: color 0.2s;
+    background-color: var(--secondary-color);
+    box-shadow: 0.1rem 0.1rem var(--shadow--color);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 img {
@@ -66,6 +76,10 @@ img {
 
 p, li {
     font-size: 1.25rem;
+}
+
+li {
+    margin: 1rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -86,6 +100,7 @@ hr {
 
 #page-container {
     width: 60vw;
+    min-width: 50rem;
     min-height: 90vh;
     margin: 0 auto 0 auto;
 }

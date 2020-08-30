@@ -232,6 +232,15 @@ main h3 {
     width: 100%;
 }
 
+.overview-skills-list-container {
+    margin: 0 1rem;
+}
+
+.overview-skills-list-container ul {
+    margin: 0;
+    padding: 0;
+}
+
 .overview-skills-list-container li {
     list-style: none;
     margin: 0;
@@ -242,13 +251,14 @@ main h3 {
     color: var(--secondary-color);
     font-size: 2rem;
     margin: 0;
+    white-space: nowrap;
 }
 
 /* footer styling */
 footer {
     width: 35vw;
     min-width: min-content;
-    margin: 5rem auto 0 auto;
+    margin: 5rem auto 1rem auto;
     color: var(--text-secondary-color);
 }
 

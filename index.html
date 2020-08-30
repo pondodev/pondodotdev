@@ -46,7 +46,10 @@
 
                     <div class="showcase-display">
                         <div class="showcase-display-tab-buttons-container">
-                            <button onclick="showContent('fullstack')" id="btn-fullstack" class="showcase-display-tab-button-active">
+                            <button onclick="showContent('overview')" id="btn-overview" class="showcase-display-tab-button-active">
+                                Overview.
+                            </button>
+                            <button onclick="showContent('fullstack')" id="btn-fullstack">
                                 Full Stack Dev.
                             </button>
                             <button onclick="showContent('gamedev')" id="btn-gamedev">
@@ -61,22 +64,62 @@
                         <!-- TODO: animate collapsing/expanding smoothly -->
                         <div id="showcase-display-content-container">
                             <!-- content will be here -->
-                            <article id="showcase-display-fullstack">
+                            <article id="showcase-display-overview">
+                                <h4>Overview</h4>
+                                <div class="overview-skills-container">
+                                    <div class="overview-skills-list-container">
+                                        <ul>
+                                            <li><h5>Header</h5></li>
+                                            <li>Content</li>
+                                            <li>More Content</li>
+                                            <li>Even More Content</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="overview-skills-list-container">
+                                        <ul>
+                                            <li><h5>Header</h5></li>
+                                            <li>Content</li>
+                                            <li>More Content</li>
+                                            <li>Even More Content</li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="overview-skills-list-container">
+                                        <ul>
+                                            <li><h5>Header</h5></li>
+                                            <li>Content</li>
+                                            <li>More Content</li>
+                                            <li>Even More Content</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article id="showcase-display-fullstack" class="hidden">
                                 <h4>Full Stack</h4>
-                                <p>insert some content here</p>
+                                <p>
+                                    I have professional experience developing full stack applications using
+                                    <span class="highlight">Angular</span>,
+                                    <span class="highlight">Microsoft SQL Server</span>,
+                                    <span class="highlight">ElasticSearch</span>,
+                                    <span class="highlight">JavaScript/TypeScript</span>,
+                                    and <span class="highlight">C#</span>. I've also had experience at
+                                    hackathons and in personal projects working with
+                                    <span class="highlight">PHP</span>,
+                                    <span class="highlight">Flask/Flast-RESTful</span>,
+                                    and <span class="highlight">React</span>.
+                                </p>
                             </article>
 
                             <article id="showcase-display-gamedev" class="hidden">
                                 <h4>Game Dev</h4>
-                                <p>insert some content here</p>
-                                <p>insert some content here</p>
+                                <p>insert game dev content here</p>
                             </article>
 
                             <article id="showcase-display-3dart" class="hidden">
                                 <h4>3D Art</h4>
-                                <p>insert some content here</p>
-                                <p>insert some content here</p>
-                                <p>insert some content here</p>
+                                <p>insert 3d art content here</p>
                             </article>
                         </div>
                     </div>

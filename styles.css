@@ -34,7 +34,8 @@
     --text-color: var(--col-5-100);
     --text-secondary-color: var(--col-4-100);
 
-    --shadow--color: #88888888;
+    --shadow-color: #88888888;
+    --highlight-color: #333;
 }
 
 /* general styling */
@@ -51,13 +52,14 @@ a {
     color: var(--primary-color);
     border-radius: 0.5rem;
     padding: 0.1rem 0.2rem;
+    box-shadow: 0 0 transparent;
     transition: all 0.2s ease-in-out;
 }
 
 a:hover {
     color: var(--text-color);
     background-color: var(--primary-color);
-    box-shadow: 0.3rem 0.3rem var(--shadow--color);
+    box-shadow: 0.3rem 0.3rem var(--shadow-color);
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
@@ -65,7 +67,7 @@ a:hover {
 a:active {
     color: var(--text-color);
     background-color: var(--secondary-color);
-    box-shadow: 0.1rem 0.1rem var(--shadow--color);
+    box-shadow: 0.1rem 0.1rem var(--shadow-color);
     text-decoration: none;
     transition: all 0.2s ease-in-out;
 }
@@ -96,6 +98,14 @@ hr {
 .hidden {
     visibility: hidden !important;
     display: none !important;
+}
+
+.highlight {
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.2rem;
+    margin: 0.1rem 0;
+    background-color: var(--highlight-color);
+    display: inline-block;
 }
 
 #page-container {
@@ -209,9 +219,29 @@ main h3 {
     margin: 0;
 }
 
-#showcase-display-content-container article h4 {
+#showcase-display-content-container h4 {
     font-size: 2rem;
     color: var(--secondary-color);
+}
+
+.overview-skills-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.overview-skills-list-container li {
+    list-style: none;
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.overview-skills-list-container h5 {
+    color: var(--secondary-color);
+    font-size: 2rem;
+    margin: 0;
 }
 
 /* footer styling */

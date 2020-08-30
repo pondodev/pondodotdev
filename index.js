@@ -9,9 +9,14 @@ var showcaseGameDev;
 var showcase3dArt;
 var showcaseContentContainer;
 
+// slice up that email real good like so bots dont see it
+// it's not fool proof, but it'll get the bots that don't deserve it ;)
+var emailSlices = ['pon', 'm', 'ev', 'do.d', 'e@'];
+
 window.onload = () => {
     document.getElementById('no-js').classList.add('hidden');
     document.getElementById('page-container').classList.remove('hidden');
+    deobfuscate();
 
     btnFullStack = document.getElementById('btn-fullstack');
     btnGameDev = document.getElementById('btn-gamedev');
@@ -45,4 +50,16 @@ function showContent(section) {
     section == '3dart' ?
         showcase3dArt.classList.remove('hidden') :
         showcase3dArt.classList.add('hidden');
+}
+
+function deobfuscate() {
+    let emails = document.getElementsByClassName('email');
+    for (let email of emails) {
+        email.href = 'mailto:';
+        email.href += emailSlices[1];
+        email.href += emailSlices[4];
+        email.href += emailSlices[0];
+        email.href += emailSlices[3];
+        email.href += emailSlices[2];
+    }
 }

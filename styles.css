@@ -205,7 +205,7 @@ hr {
     margin: 0 auto 0 auto;
 }
 
-#no-js {
+#no-js, .error-page {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -215,17 +215,17 @@ hr {
     text-align: center;
 }
 
-#no-js h1 {
+#no-js h1, .error-page h1 {
     font-size: 6rem;
     color: var(--primary-color);
 }
 
-#no-js h2 {
+#no-js h2, .error-page h2 {
     font-size: 2.5rem;
     color: var(--secondary-color);
 }
 
-#no-js p {
+#no-js p, .error-page p {
     font-size: 1.5rem;
     color: var(--text-color);
 }

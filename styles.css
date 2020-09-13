@@ -72,7 +72,7 @@ a:active {
     transition: all 0.2s ease-in-out;
 }
 
-img {
+img, video {
     border-radius: 1rem;
 }
 
@@ -177,6 +177,25 @@ hr {
 .image-showcase-container img:active {
     box-shadow: 0.1rem 0.1rem var(--shadow-color);
     transition: all 0.2s ease-in-out;
+}
+
+.art-showcase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.art-showcase img, .art-showcase video {
+    --img-gap: 0.25rem;
+    max-width: calc(50% - (var(--img-gap) * 2));
+    max-height: calc(50% - (var(--img-gap) * 2));
+    min-width: calc(50% - (var(--img-gap) * 2));
+    min-height: calc(50% - (var(--img-gap) * 2));
+    image-rendering: high-quality;
+    margin: var(--img-gap);
 }
 
 #page-container {

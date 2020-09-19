@@ -190,10 +190,11 @@ hr {
 
 .art-showcase img, .art-showcase video {
     --img-gap: 0.25rem;
-    max-width: calc(50% - (var(--img-gap) * 2));
-    max-height: calc(50% - (var(--img-gap) * 2));
-    min-width: calc(50% - (var(--img-gap) * 2));
-    min-height: calc(50% - (var(--img-gap) * 2));
+    --img-row-count: 3;
+    max-width: calc(calc(100% / var(--img-row-count)) - (var(--img-gap) * var(--img-row-count)));
+    max-height: calc(calc(100% / var(--img-row-count)) - (var(--img-gap) * var(--img-row-count)));
+    min-width: calc(calc(100% / var(--img-row-count)) - (var(--img-gap) * var(--img-row-count)));
+    min-height: calc(calc(100% / var(--img-row-count)) - (var(--img-gap) * var(--img-row-count)));
     image-rendering: high-quality;
     margin: var(--img-gap);
 }

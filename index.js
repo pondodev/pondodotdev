@@ -16,7 +16,6 @@ var showcaseContentContainer;
 var emailSlices = ['pon', 'm', 'ev', 'do.d', 'e@'];
 
 window.onload = () => {
-    document.getElementById('no-js').classList.add('hidden');
     document.getElementById('page-container').classList.remove('hidden');
     deobfuscate();
 

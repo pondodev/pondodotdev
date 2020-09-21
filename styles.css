@@ -57,10 +57,12 @@ a {
 }
 
 a:hover {
+    --raise-distance: 0.3rem;
     color: var(--text-color);
     background-color: var(--primary-color);
-    box-shadow: 0.3rem 0.3rem var(--shadow-color);
+    box-shadow: var(--raise-distance) var(--raise-distance) var(--shadow-color);
     text-decoration: none;
+    transform: translate(calc(var(--raise-distance) * -1), calc(var(--raise-distance) * -1));
     transition: all 0.2s ease-in-out;
 }
 
@@ -109,17 +111,23 @@ hr {
 }
 
 .image-showcase-container {
-    background-color: var(--primary-color);
-    border-radius: 1rem;
     margin: 1rem 0;
-    padding: 1rem;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
 }
 
 #showcase-display-gamedev > :last-child {
     margin-bottom: 0;
+}
+
+.image-showcase-container > .image-showcase-text-container:nth-child(even) {
+    margin-left: 1rem;
+}
+
+.image-showcase-container > .image-showcase-text-container:nth-child(odd) {
+    margin-right: 1rem;
 }
 
 .image-showcase-text-container {
@@ -127,8 +135,10 @@ hr {
     border: 0.5rem solid var(--secondary-color);
     border-radius: 1rem;
     padding: 1rem;
-    margin-left: 1rem;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .image-showcase-text-container > :first-child {
@@ -139,14 +149,14 @@ hr {
     margin-bottom: 0;
 }
 
-.image-showcase-container a {
+.image-showcase-container > a {
     color: transparent;
     border-radius: 0;
     padding: 0;
     box-shadow: 0 0 transparent;
 }
 
-.image-showcase-container a:hover {
+.image-showcase-container > a:hover {
     color: transparent;
     background-color: transparent;
     box-shadow: none;
@@ -161,11 +171,12 @@ hr {
 }
 
 .image-showcase-container img {
-    border: 0.5rem solid var(--secondary-color);
+    border: 0.5rem solid var(--primary-color);
     border-radius: 1rem;
     box-shadow: 0 0 transparent;
     max-height: 25rem;
     max-width: 25rem;
+    background: white;
     transition: all 0.2s ease-in-out;
 }
 

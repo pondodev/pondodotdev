@@ -11,218 +11,29 @@
 
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet" /> 
-        <link href="styles.css" type="text/css" rel="stylesheet" />
-
-        <script src="index.js"></script>
+        <link href="main.css" type="text/css" rel="stylesheet" />
     </head>
 
     <body>
-        <div id="no-js">
-            <h1>Uh oh.</h1>
-            <h2>Looks like you don't have JavaScript enabled in your browser :(</h2>
+        <header>
+            <div class="header-bg"></div>
+            <h1 class="header-text">Daniel Coady</h1>
+        </header>
+
+        <main>
+            <h2 class="section-header">Hey, I'm Dan.</h2>
             <p>
-                I swear there's nothing scary, just some light stuff! So please enable JavaScript in your browser to continue :)
+                I'm a software developer from Melbourne, Australia. Day to day I work as a
+                <span class="accent-text">Full Stack Developer</span> and in my spare time
+                I work on projects to learn more about technology, new and old.
             </p>
-        </div>
+        </main>
 
-        <div id="page-container" class="hidden">
-            <header>
-                <h1>Daniel Coady.</h1>
-                <h2>Full Stack Dev. Game Dev Hobbyist. 3D Artist.</h2>
-            </header>
-
-            <main>
-                <section id="introduction">
-                    <h3>Hey, I'm Dan.</h3>
-                    <p>
-                        I'm a software developer from Melbourne, Australia. day to day I work as a full stack developer
-                        and in my spare time I work on projects to learn more about technology, new and old.
-                    </p>
-                </section>
-
-                <section id="showcase">
-                    <h3>What I Do</h3>
-                    <p>Check out below just a few of the things I do, both professionally and as a hobby!</p>
-
-                    <div class="showcase-display">
-                        <div class="showcase-display-tab-buttons-container">
-                            <button onclick="showContent('overview')" id="btn-overview" class="showcase-display-tab-button-active">
-                                Overview.
-                            </button>
-                            <button onclick="showContent('fullstack')" id="btn-fullstack">
-                                Full Stack Dev.
-                            </button>
-                            <button onclick="showContent('gamedev')" id="btn-gamedev">
-                                Game Dev.
-                            </button>
-                            <button onclick="showContent('3dart')" id="btn-3dart">
-                                3D Art.
-                            </button>
-                        </div>
-                        <hr />
-
-                        <!-- TODO: animate collapsing/expanding smoothly -->
-                        <div id="showcase-display-content-container">
-                            <!-- content will be here -->
-                            <article id="showcase-display-overview">
-                                <h4>Overview</h4>
-                                <div class="overview-skills-container">
-                                    <div class="overview-skills-list-container">
-                                        <ul>
-                                            <li><h5>Languages</h5></li>
-                                            <li>C#</li>
-                                            <li>Rust</li>
-                                            <li>HTML/CSS</li>
-                                            <li>JavaScript/TypeScript</li>
-                                            <li>SQL</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="overview-skills-list-container">
-                                        <ul>
-                                            <li><h5>Software</h5></li>
-                                            <li>Git</li>
-                                            <li>Jira</li>
-                                            <li>Docker</li>
-                                            <li>Linux</li>
-                                            <li>Unity</li>
-                                            <li>Blender</li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="overview-skills-list-container">
-                                        <h5>About Me</h5>
-                                        <p>
-                                            I've been interested in technology for as long as I can remember,
-                                            starting my journey as a programmer from the age of 12 when I picked
-                                            up HTML and CSS. To this day I continue to search for more
-                                            cool stuff to learn, both in my studies and on my own or with mates.
-                                        </p>
-
-                                        <p>
-                                            Currently I study Computer Science with a major in Software Development
-                                            at Swinburne full time, undertaking a full time internship at OnQ
-                                            Software as a software developer as a part of my studies.
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article id="showcase-display-fullstack" class="hidden">
-                                <h4>Full Stack</h4>
-                                <p>
-                                    I have professional experience developing full stack applications using
-                                    <span class="highlight">Angular</span>,
-                                    <span class="highlight">Microsoft SQL Server</span>,
-                                    <span class="highlight">ElasticSearch</span>,
-                                    <span class="highlight">JavaScript/TypeScript</span>,
-                                    and <span class="highlight">C#</span>. I've also had experience at
-                                    hackathons and in personal projects working with
-                                    <span class="highlight">PHP</span>,
-                                    <span class="highlight">Flask/Flast-RESTful</span>,
-                                    and <span class="highlight">React</span>.
-                                </p>
-
-                                <p>
-                                    I currently work as a software developer for OnQ Software, developing the
-                                    new QLIMS9 Laboratory Information Management Software platform. Day to day I
-                                    fix workflow bugs, create/implement user facing management tools for UI/UX,
-                                    and design/implement the UI/UX of our platform.
-                                </p>
-                            </article>
-
-                            <article id="showcase-display-gamedev" class="hidden">
-                                <h4>Game Dev</h4>
-                                <p>
-                                    I've been a hobbyist game developer for going on 4 years now, operating both
-                                    on my own and as a part of a team. I've experimented with various engines,
-                                    including <span class="highlight">Unreal Engine 4</span>,
-                                    <span class="highlight">Godot</span>,
-                                    and <span class="highlight">Unity</span>. Of these engines I primarily use and
-                                    know the most about Unity.
-                                </p>
-
-                                <h4>Some of My Projects</h4>
-                                <p>
-                                    In no particular order, some of the things I've worked on:
-                                </p>
-                                <!-- TODO: add games i have worked on here -->
-                                <div class="image-showcase-container">
-                                    <a href="https://cyndrdev.itch.io/stopnt" target="_blank">
-                                        <img src="images/stopnt.png" alt="Stopn't Game" />
-                                    </a>
-                                    <div class="image-showcase-text-container">
-                                        <p>
-                                            Stopn't is a fast paced futuristic racer where you must go as fast as
-                                            possible, not crash, and survive for as long as you can.
-                                        </p>
-
-                                        <p>
-                                            Over the course of GMTK2020, the game jam this was made in, I took the role
-                                            of 3D artist and level designer. Of note, I took the lead on researching,
-                                            iterating on, and refining the design philosophy that would ultimately
-                                            result in the final track of the game.
-                                        </p>
-
-                                        <p>
-                                            Stopn't placed 700th overall and 520th in fun out of a total of
-                                            5,397 entries.
-                                        </p>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article id="showcase-display-3dart" class="hidden">
-                                <h4>3D Art</h4>
-                                <p>
-                                    I use <span class="highlight">Blender</span> as a hobbyist, primarily for
-                                    creating game assets such as models and animations, but also for standalone
-                                    pieces of art.
-                                </p>
-
-                                <div class="art-showcase">
-                                    <img src="images/reach.jpg" alt="Reach art piece" />
-                                    <img src="images/mesmer.jpg" alt="Mesmer art piece" />
-                                    <video autoplay loop muted playsinline>
-                                        <source src="images/pride.webm" type="video/webm" />
-                                        <source src="images/pride.mp4" type="video/mp4" />
-                                    </video>
-                                    <img src="images/smoke.jpg" alt="Smoke art piece" />
-                                    <img src="images/redline86.jpg" alt="Redline 86 art piece" />
-                                    <img src="images/dimension.jpg" alt="Dimension art piece" />
-                                    <img src="images/portal.jpg" alt="Portal art piece" />
-                                    <img src="images/hand.jpg" alt="Hand art piece" />
-                                    <img src="images/sploosh.jpg" alt="Sploosh art piece" />
-                                    <img src="images/tree.jpg" alt="Tree art piece" />
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="contact-me">
-                    <h3>Contact Me</h3>
-                    <p>
-                        If you'd like to contact me and/or see more of what I have to offer, check out some of
-                        the links below!
-                    </p>
-
-                    <ul>
-                        <li><a class="email" href="#">Email</a></li>
-                        <li><a href="https://github.com/pondodev" target="_blank">GitHub</a></li>
-                        <li><a href="https://gitlab.com/pondodev" target="_blank">GitLab</a></li>
-                        <li><a href="https://pondodev.itch.io/" target="_blank">itch.io</a></li>
-                        <li><a href="https://www.linkedin.com/in/daniel-coady-74198514a/">LinkedIn</a></li>
-                    </ul>
-                </section>
-            </main>
-
-            <footer>
-                <p>
-                    made by daniel coady 2020 // source code available
-                    <a href="https://github.com/pondodev/pondodotdev" target="_blank">here</a>
-                </p>
-            </footer>
-        </div>
+        <footer>
+            <p>
+                Made by Daniel Coady 2020 // Source code available
+                <a href="https://github.com/pondodev/pondodotdev" target="_blank">here</a>
+            </p>
+        </footer>
     </body>
 </html>

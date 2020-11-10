@@ -7,7 +7,8 @@
     --accent-background-color: #945DC0;
 
     --content-width: 50vw;
-    --border-width: 2rem;
+    --h1-border-width: 2rem;
+    --h2-border-width: 1rem;
 }
 
 body {
@@ -28,6 +29,23 @@ body {
 
 a {
     color: var(--accent-text-color);
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    --shadow-distance: 0.5rem;
+    color: var(--text-color);
+    background-color: var(--accent-background-color);
+    box-shadow: var(--shadow-distance) var(--shadow-distance) var(--border-color);
+    transition: all 0.2s ease-in-out;
+}
+
+a:active {
+    --shadow-distance: 0;
+    color: var(--text-color);
+    background-color: var(--border-color);
+    box-shadow: var(--shadow-distance) var(--shadow-distance) transparent;
+    transition: all 0.15s ease-in-out;
 }
 
 .accent-text {
@@ -54,7 +72,7 @@ header {
     width: min-content;
     height: 100%;
 
-    border-bottom: var(--border-color) solid var(--border-width);
+    border-bottom: var(--border-color) solid var(--h1-border-width);
 }
 
 .header-bg {
@@ -64,11 +82,11 @@ header {
     top: 0;
     left: 0;
 
-    height: calc(100% - var(--border-width));
+    height: calc(100% - var(--h1-border-width));
     width: 50%;
     z-index: -1;
 
-    border-bottom: var(--border-color) solid var(--border-width);
+    border-bottom: var(--border-color) solid var(--h1-border-width);
 }
 
 /* footer */
@@ -93,7 +111,7 @@ main {
     font-size: 4rem;
     background: var(--accent-background-color);
     padding: 1rem 4rem;
-    border-bottom: var(--border-color) solid 1rem;
+    border-bottom: var(--border-color) solid var(--h2-border-width);
     white-space: nowrap;
     width: min-content;
 }

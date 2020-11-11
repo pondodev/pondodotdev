@@ -178,11 +178,13 @@ main {
 }
 
 .accented-content {
-    padding: 2rem 4rem;
+    --horizontal-padding: 4rem;
+    padding: 2rem var(--horizontal-padding);
     margin: 2rem auto;
     position: relative;
     width: max-content;
     max-width: var(--content-width);
+    transform: translate(calc(var(--horizontal-padding) * -1));
 }
 
 .accented-content:before, .accented-content:after {

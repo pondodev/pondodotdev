@@ -1,0 +1,24 @@
+:root {
+    --image-columns: 3;
+    --image-border-width: 1rem;
+    --image-gap-size: 1rem;
+}
+
+.art-showcase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.art-showcase > img, .art-showcase > video {
+    --base-image-size: calc(100% / var(--image-columns));
+    --border-offset: calc(var(--image-border-width) * 2);
+    --combined-offset: calc(var(--border-offset) + var(--image-gap-size));
+
+    max-width: calc(var(--base-image-size) - var(--combined-offset));
+    max-width: calc(var(--base-image-size) - var(--combined-offset));
+    border: var(--accent-background-color) solid var(--image-border-width);
+    margin: calc(var(--image-gap-size) / 2);
+}

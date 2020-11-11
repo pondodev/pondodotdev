@@ -164,7 +164,7 @@ main {
     font-size: 4rem;
     white-space: nowrap;
 
-    border-left: var(--border-color) solid var(--brackets-width);
+    border-left: var(--accent-background-color) solid var(--brackets-width);
 
     padding-left: var(--left-padding);
     width: min-content;
@@ -193,7 +193,7 @@ main {
     width: 2rem;
     top: 0;
     bottom: 0;
-    border: var(--border-color) solid var(--brackets-width);
+    border: var(--accent-background-color) solid var(--brackets-width);
 }
 
 .accented-content:before {

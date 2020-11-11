@@ -1,0 +1,16 @@
+.skills-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-container > * {
+    margin: 0 2rem;
+}
+
+.skills-container > *:first-child {
+    margin-left: 0;
+}
+
+.skills-container > *:last-child {
+    margin-right: 0;
+}

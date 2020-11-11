@@ -103,7 +103,8 @@ header {
 
 /* footer */
 footer {
-    padding: 4rem 0;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 footer > p {
@@ -214,4 +215,31 @@ main {
     display: block;
     width: max-content;
     text-decoration: none;
+}
+
+.socials {
+    margin: 1rem auto;
+    margin-bottom: 0;
+    font-size: 3rem;
+}
+
+.socials > a {
+    margin: 0 1rem;
+    padding: 0;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.socials > a:hover {
+    box-shadow: none;
+    background-color: transparent;
+    color: var(--accent-text-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.socials > a:active {
+    background-color: transparent;
+    color: var(--border-color);
+    transition: all 0.15s ease-in-out;
 }

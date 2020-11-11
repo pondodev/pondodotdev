@@ -1,5 +1,7 @@
 /* general */
 :root {
+    font-size: 75%;
+
     --background-color: #292929;
     --text-color: white;
     --border-color: #5c367a;
@@ -7,8 +9,8 @@
     --accent-background-color: #945DC0;
 
     --content-width: 50vw;
-    --h1-border-width: 2rem;
-    --h2-border-width: 1rem;
+    --border-width: 2rem;
+    --brackets-width: 1rem;
 }
 
 body {
@@ -29,6 +31,7 @@ body {
 
 a {
     color: var(--accent-text-color);
+    padding: 0.2rem;
     transition: all 0.2s ease-in-out;
 }
 
@@ -46,6 +49,14 @@ a:active {
     background-color: var(--border-color);
     box-shadow: var(--shadow-distance) var(--shadow-distance) transparent;
     transition: all 0.15s ease-in-out;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+ul {
+    padding: 0;
 }
 
 .accent-text {
@@ -72,7 +83,7 @@ header {
     width: min-content;
     height: 100%;
 
-    border-bottom: var(--border-color) solid var(--h1-border-width);
+    border-bottom: var(--border-color) solid var(--border-width);
 }
 
 .header-bg {
@@ -82,11 +93,11 @@ header {
     top: 0;
     left: 0;
 
-    height: calc(100% - var(--h1-border-width));
+    height: calc(100% - var(--border-width));
     width: 50%;
     z-index: -1;
 
-    border-bottom: var(--border-color) solid var(--h1-border-width);
+    border-bottom: var(--border-color) solid var(--border-width);
 }
 
 /* footer */
@@ -108,10 +119,63 @@ main {
 }
 
 .section-header {
+    --horizontal-padding: 4rem;
+
     font-size: 4rem;
-    background: var(--accent-background-color);
-    padding: 1rem 4rem;
-    border-bottom: var(--border-color) solid var(--h2-border-width);
     white-space: nowrap;
+
+    background-color: var(--accent-background-color);
+
+    padding: 1rem var(--horizontal-padding);
     width: min-content;
+    transform: translate(calc(var(--horizontal-padding) * -1));
+}
+
+.section-subheader {
+    font-size: 2rem;
+    color: var(--accent-text-color);
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.accented-content {
+    padding: 2rem 4rem;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.accented-content:before, .accented-content:after {
+    content: "";
+    position: absolute;
+    width: 2rem;
+    top: 0;
+    bottom: 0;
+    border: var(--border-color) solid var(--brackets-width);
+}
+
+.accented-content:before {
+    border-right: none;
+    left: 0;
+}
+
+.accented-content:after {
+    border-left: none;
+    right: 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-container > * {
+    margin: 0 2rem;
+}
+
+.skills-container > *:first-child {
+    margin-left: 0;
+}
+
+.skills-container > *:last-child {
+    margin-right: 0;
 }

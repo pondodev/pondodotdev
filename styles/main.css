@@ -2,15 +2,16 @@
 :root {
     font-size: 75%;
 
+    --content-width: 50vw;
+    --border-width: 2rem;
+    --brackets-width: 1rem;
+
+    /* fallback colours */
     --background-color: #292929;
     --text-color: white;
     --border-color: #5c367a;
     --accent-text-color: #AA7ECD;
     --accent-background-color: #945DC0;
-
-    --content-width: 50vw;
-    --border-width: 2rem;
-    --brackets-width: 1rem;
 }
 
 body {
@@ -111,6 +112,37 @@ footer > p {
     width: var(--content-width);
 }
 
+/* nav bar */
+nav {
+    font-size: 4rem;
+    margin: 0 auto;
+    width: max-content;
+}
+
+nav ul {
+    width: max-content;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--accent-background-color);
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: var(--text-color);
+    padding: 1rem 4rem;
+    text-decoration: none;
+}
+
+nav a:hover, .current-nav-item {
+    background-color: var(--border-color);
+    box-shadow: none;
+}
+
 /* main content */
 main {
     flex-grow: 1;
@@ -124,18 +156,17 @@ main {
     font-size: 4rem;
     white-space: nowrap;
 
-    background-color: var(--accent-background-color);
+    border-left: var(--border-color) solid var(--brackets-width);
 
-    padding: 1rem var(--horizontal-padding);
+    padding: 0 var(--horizontal-padding);
     width: min-content;
-    transform: translate(calc(var(--horizontal-padding) * -1));
+    transform: translate(calc((var(--horizontal-padding) + var(--brackets-width)) * -1));
 }
 
 .section-subheader {
     font-size: 2rem;
     color: var(--accent-text-color);
     margin: 0;
-    margin-bottom: 2rem;
 }
 
 .accented-content {

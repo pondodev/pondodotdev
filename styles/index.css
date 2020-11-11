@@ -14,3 +14,45 @@
 .skills-container > *:last-child {
     margin-right: 0;
 }
+
+input, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    border: none;
+    padding: 0.5rem;
+    text-transform: inherit;
+}
+
+input[type=submit] {
+    color: var(--text-color);
+    background-color: var(--accent-background-color);
+    padding: 1rem 2rem;
+    transition: all 0.2s ease-in-out;
+}
+
+input[type=submit]:hover {
+    --shadow-distance: 0.5rem;
+    color: var(--text-color);
+    background-color: var(--accent-background-color);
+    box-shadow: var(--shadow-distance) var(--shadow-distance) var(--border-color);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+input:required, textarea:required {
+    box-shadow: none;
+}
+
+label {
+    font-weight: bold;
+}
+
+.required:after {
+    content: " *";
+    color: #e34d4d;
+}
+
+form > *{
+    display: block;
+    margin: 1rem 0;
+}

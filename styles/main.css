@@ -159,16 +159,16 @@ main {
 }
 
 .section-header {
-    --horizontal-padding: 4rem;
+    --left-padding: calc(4rem - var(--brackets-width));
 
     font-size: 4rem;
     white-space: nowrap;
 
     border-left: var(--border-color) solid var(--brackets-width);
 
-    padding: 0 var(--horizontal-padding);
+    padding-left: var(--left-padding);
     width: min-content;
-    transform: translate(calc((var(--horizontal-padding) + var(--brackets-width)) * -1));
+    transform: translate(calc((var(--left-padding) + var(--brackets-width)) * -1));
 }
 
 .section-subheader {

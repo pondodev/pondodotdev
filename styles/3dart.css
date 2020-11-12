@@ -16,8 +16,10 @@
     --border-offset: calc(var(--brackets-width) * 2);
     --combined-offset: calc(var(--border-offset) + var(--image-gap-size));
 
-    max-width: calc(var(--base-image-size) - var(--combined-offset));
-    max-width: calc(var(--base-image-size) - var(--combined-offset));
+    width: calc(var(--base-image-size) - var(--combined-offset));
+    height: calc(var(--base-image-size) - var(--combined-offset));
     border: var(--accent-background-color) solid var(--brackets-width);
     margin: calc(var(--image-gap-size) / 2);
+    object-fit: contain;
+    background-color: white;
 }

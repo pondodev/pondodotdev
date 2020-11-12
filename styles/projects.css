@@ -1,5 +1,8 @@
 img {
-    border: var(--accent-background-color) solid 1rem;
+    border: var(--accent-background-color) solid var(--brackets-width);
     float: right;
     margin: 1rem;
+    width: 10%;
+    max-width: 50%;
+    min-width: 30%;
 }

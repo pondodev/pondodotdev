@@ -4,7 +4,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
     :root {
         --content-width: 80vw;
     }
@@ -30,9 +30,26 @@
         width: 100%;
         background-color: var(--accent-background-color);
     }
+
+    nav ul {
+        margin: 0 auto;
+    }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 790px) {
+    nav {
+        font-size: 2rem;
+        margin: 0;
+        width: 100%;
+        background-color: var(--accent-background-color);
+    }
+
+    nav ul {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 640px) {
     :root {
         font-size: 50%;
         --content-width: calc(100vw - 2rem);

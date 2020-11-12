@@ -4,6 +4,34 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    :root {
+        --content-width: 80vw;
+    }
+
+    /* header */
+    header {
+        margin-top: 0;
+    }
+
+    .header-text {
+        padding: 2rem 0;
+        width: 100vw;
+    }
+
+    .header-bg {
+        display: none;
+    }
+
+    /* nav bar */
+    nav {
+        font-size: 3rem;
+        margin: 0;
+        width: 100%;
+        background-color: var(--accent-background-color);
+    }
+}
+
 @media screen and (max-width: 450px) {
     :root {
         font-size: 50%;

@@ -6,3 +6,12 @@
         min-width: unset;
     }
 }
+
+@media screen and (max-width: 768px) {
+    img {
+        float: none;
+        width: unset;
+        max-width: unset;
+        min-width: unset;
+    }
+}

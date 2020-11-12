@@ -3,13 +3,3 @@ img {
     float: right;
     margin: 1rem;
 }
-
-.button {
-    background-color: var(--accent-background-color);
-    color: var(--text-color);
-    font-weight: bold;
-    padding: 1rem 2rem;
-    display: block;
-    width: max-content;
-    text-decoration: none;
-}

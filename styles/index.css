@@ -52,6 +52,11 @@ label {
     color: #e34d4d;
 }
 
+form {
+    display: inline-block;
+    width: 50%;
+}
+
 form > *{
     display: block;
     margin: 1rem 0;

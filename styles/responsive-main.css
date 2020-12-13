@@ -34,6 +34,10 @@
     nav ul {
         margin: 0 auto;
     }
+
+    .buttons-vert-container > * {
+        margin: 2rem 0;
+    }
 }
 
 @media screen and (max-width: 790px) {
@@ -105,9 +109,5 @@
 
     .accented-content:before, .accented-content:after {
         display: none;
-    }
-
-    .socials {
-        margin-top: 4rem;
     }
 }

@@ -103,7 +103,7 @@ header {
 
 /* footer */
 footer {
-    padding-top: 4rem;
+    padding-top: 8rem;
     padding-bottom: 2rem;
 }
 
@@ -217,8 +217,24 @@ main {
     text-decoration: none;
 }
 
+.buttons-vert-container {
+    margin-top: 4rem;
+}
+
+.buttons-vert-container > * {
+    margin: 1rem 0;
+}
+
+.buttons-vert-container > *:first-child {
+    margin-top: 0;
+}
+
+.buttons-vert-container > *:last-child {
+    margin-bottom: 0;
+}
+
 .socials {
-    margin: 1rem auto;
+    margin: 4rem auto;
     margin-bottom: 0;
     font-size: 3rem;
 }

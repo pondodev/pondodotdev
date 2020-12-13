@@ -2,16 +2,16 @@
     img {
         float: none;
         width: unset;
-        max-width: unset;
+        max-width: 80%;
         min-width: unset;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
     img {
         float: none;
         width: unset;
-        max-width: unset;
+        max-width: 80%;
         min-width: unset;
     }
 }

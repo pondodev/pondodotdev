@@ -52,21 +52,59 @@ label {
     color: #e34d4d;
 }
 
-form {
+.responsive-form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+.responsive-form > * {
+    margin: 0 1rem;
+}
+
+.responsive-form > *:first-child {
+    margin-left: 0;
+}
+
+.responsive-form > *:last-child {
+    margin-right: 0;
+}
+
+.responsive-form-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    flex-grow: 1;
 }
 
-form > * {
+.responsive-form-column > * {
     margin: 0.5rem 0;
-    display: inline;
 }
 
-form > *:first-child {
+.responsive-form-column > *:nth-child(even) {
     margin-top: 0;
 }
 
-form > *:last-child {
+.responsive-form-column > *:first-child {
+    margin-top: 0;
+}
+
+.responsive-form-column > *:last-child {
     margin-bottom: 0;
+}
+
+.responsive-form-column input:focus,
+.responsive-form-column textarea:focus {
+    --outline-width: 0.25rem;
+    outline: var(--outline-width) var(--accent-text-color) solid;
+    outline-offset: var(--outline-width);
+    transition: all 0.1s ease-in-out;
+}
+
+.responsive-form-message-field {
+    box-sizing: border-box;
+    width: 100%;
+    flex-grow: 1;
+    resize: none;
+    min-height: 15rem;
 }

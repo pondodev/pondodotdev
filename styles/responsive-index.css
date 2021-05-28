@@ -1,5 +1,42 @@
 @media screen and (max-width: 450px) {
-    form textarea {
-        width: 80vw;
+}
+
+@media screen and (max-width: 1900px) {
+    .responsive-form{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .responsive-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .responsive-form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .responsive-form > * {
+        margin: 0;
+    }
+
+    .responsive-form > .responsive-form-column {
+        margin: 0.5rem 0;
+    }
+
+    .responsive-form > .responsive-form-column:first-child {
+        margin-top: 0;
+    }
+
+    .responsive-form > .responsive-form-column:last-child {
+        margin-bottom: 0;
+    }
+
+    .flex-break {
+        width: 100%;
     }
 }

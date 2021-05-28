@@ -39,11 +39,12 @@
             </nav>
 
             <p class="accented-content">
-                Software developer from Melbourne, Australia. Professional
-                Full Stack Developer with interests in various aspects of
-                computing including graphics programming, low level computing,
-                and games programming. A nerd at heart, always working on
-                side projects while seeking new challenges.
+                Full Stack Developer, UI/UX Designer, and Games Programmer
+                from Melbourne, Australia. I've got interests ranging from
+                low level computing to photography, and I'm always looking
+                for new challenges and experiences to broaden my horizons.
+                In fact, I'm probably working on something on the side
+                right now!
             </p>
 
             <h2 class="section-header">Skills</h2>
@@ -78,17 +79,25 @@
                 please fill out the form below and I'll respond to you as soon as I can!
             </p>
             <form action="https://formspree.io/f/xqkgladp" method="POST">
-                <label class="required" for="name">Name</label>
-                <input type="text" name="name" id="name" required />
+                <div class="responsive-form">
+                    <div class="responsive-form-column">
+                        <label class="required" for="name">Name</label>
+                        <input type="text" name="name" id="name" required />
 
-                <label class="required" for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" required />
+                        <label class="required" for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" required />
 
-                <label class="required" for="email">Email</label>
-                <input type="email" name="email" id="email" required />
+                        <label class="required" for="email">Email</label>
+                        <input type="email" name="email" id="email" required />
+                    </div>
 
-                <label class="required" for="message">Message</label>
-                <textarea name="message" id="message" rows="5" cols="40" required></textarea>
+                    <div class="flex-break"></div>
+
+                    <div class="responsive-form-column">
+                        <label class="required" for="message">Message</label>
+                        <textarea name="message" id="message" class="responsive-form-message-field" required></textarea>
+                    </div>
+                </div>
 
                 <input type="submit" value="Send it!" />
             </form>
@@ -96,7 +105,7 @@
 
         <footer>
             <p>
-                Made by Daniel Coady 2020 // Source code available
+                &#169; Daniel Coady 2020-2021 // Source code available
                 <a href="https://github.com/pondodev/pondodotdev" target="_blank">here</a>
             </p>
             <p class="socials">

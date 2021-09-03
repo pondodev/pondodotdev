@@ -4,7 +4,10 @@
 <meta name="author" content="Dan Coady" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>dan coady. developer, 3d artist.</title>
+<title>
+    {{ if not .IsHome }}dan coady - {{ .Title }}
+    {{ else }}dan coady - indie game developer{{ end }}
+</title>
 
 <!-- fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet" />

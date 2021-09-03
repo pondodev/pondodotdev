@@ -1,6 +1,6 @@
 baseURL = 'https://pondo.dev/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'dan coady portfolio'
 theme = 'pondo-theme'
 
 [menu]

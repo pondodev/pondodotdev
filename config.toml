@@ -1,0 +1,25 @@
+baseURL = 'https://pondo.dev/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'pondo-theme'
+
+[menu]
+[[menu.main]]
+    identifier = 'home'
+    name = 'Home'
+    url = '/'
+    weight = 1
+[[menu.main]]
+    identifier = 'projects'
+    name = 'Projects'
+    url = '/projects/'
+    weight = 2
+[[menu.main]]
+    identifier = '3dart'
+    name = '3D Art'
+    url = '/3dart/'
+    weight = 3
+
+[permalinks]
+    projects = '/:filename/'
+    3dart = '/:filename/'

@@ -1,0 +1,84 @@
+{{ define "styles" }}
+<link href="{{ "css/projects.css" | relURL }}" type="text/css" rel="stylesheet" />
+<link href="{{ "css/projects-colors.css" | relURL }}" type="text/css" rel="stylesheet" />
+
+<link href="{{ "css/responsive-projects.css" | relURL }}" type="text/css" rel="stylesheet" />
+{{ end }}
+
+{{ define "main" }}
+<section>
+    <h2 class="section-header">???</h2>
+    <p>
+        A mystery upcoming project! Keep up to date with me on
+        <a href="https://twitter.com/fakemuso" target="_blank">Twitter</a>
+        to get updates as they come.
+    </p>
+</section>
+
+<section>
+    <h2 class="section-header">dstnce.</h2>
+    <img style="background-color: white;" src="{{ "images/dstnce.png" | relURL }}" alt="dstnce logo" />
+    <p>
+        A platforming adventure game where you work your day job, clean up your room, look after your plant,
+        and so much more as you try to get by one step at a time. it is what you make of it, so make the most of it.
+    </p>
+    <p>
+        dstnce was a solo project created in the span of 2 months where I created everything from the music to
+        the game systems myself. This served primarily as a learning experience for me, giving me the space to
+        learn more about things such as games systems design, audio programming with FMOD, and accessible design.
+    </p>
+    <div class="buttons-vert-container">
+        <a class="button" href="https://store.steampowered.com/app/1487360/dstnce/" target="_blank">
+            <span class="fab fa-steam"></span>
+            Find it on Steam!
+        </a>
+        <a class="button" href="https://pondodev.itch.io/dstnce" target="_blank">
+            <span class="fab fa-itch-io"></span>
+            Find it on itch!
+        </a>
+        <a class="button" href="https://www.escapistmagazine.com/v2/dstnce-daniel-coady-free-lonely-isolation-game/" target="_blank">
+            Featured on The Escapist!
+        </a>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-header">stopn't</h2>
+    <img src="{{ "images/stopnt.png" | relURL }}" alt="stopn't logo" />
+    <p>
+        A fast paced futuristic racer where you must go as fast as possible,
+        not crash, and survive for as long as you can.
+    </p>
+    <p>
+        stopn't is a jam game made for GMTK2020 over the course of a weekend.
+        I spearheaded the 3D art and level design, working on this project with
+        <a href="https://cyndr.dev/">cinder foster-smith</a>, <a href="https://ktyl.dev">cat flynn</a>,
+        and <a href="https://www.caijonesaudio.com/">cai jones</a>.
+    </p>
+    <p>
+        stopn't placed 700th overall and 520th in fun out of a total of 5,397 entries.
+    </p>
+    <div class="buttons-vert-container">
+        <a class="button" href="https://cyndrdev.itch.io/stopnt" target="_blank">
+            <span class="fab fa-itch-io"></span>
+            Find it on itch!
+        </a>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-header">gboop</h2>
+    <img style="background-color: white;" src="{{ "images/gboop.svg" | relURL }}" alt="gboop logo" />
+    <p>
+        A work in progress gameboy emulator, developed by both myself and
+        <a href="https://cyndr.dev/">cinder foster-smith</a> as a way to explore and learn more about
+        the GameBoy and low level computer emulation in general. Plus, it's just fun!
+    </p>
+    <div class="buttons-vert-container">
+        <a class="button" href="https://gitlab.com/emunerds/gboop" target="_blank">
+            <span class="fab fa-gitlab"></span>
+            Find it on GitLab!
+        </a>
+    </div>
+</section>
+{{ end }}

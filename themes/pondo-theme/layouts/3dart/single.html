@@ -1,0 +1,32 @@
+{{ define "styles" }}
+<link href="{{ "css/3dart.css" | relURL }}" type="text/css" rel="stylesheet" />
+<link href="{{ "css/3dart-colors.css" | relURL }}" type="text/css" rel="stylesheet" />
+
+<link href="{{ "css/responsive-3dart.css" | relURL }}" type="text/css" rel="stylesheet" />
+{{ end }}
+
+{{ define "main" }}
+<p class="accented-content">
+    I use Blender mostly to create game assets, but also standalone art pieces. Below is a selection
+    of some of my standalone works.
+</p>
+<div class="art-showcase">
+    <video autoplay loop muted playsinline>
+        <source src="{{ "images/gameboy.webm" | relURL }}" type="video/webm" />
+        <source src="{{ "images/gameboy.mp4" | relURL }}" type="video/mp4" />
+    </video>
+    <img src="{{ "images/reach.jpg" | relURL }}" alt="Reach art piece" />
+    <img src="{{ "images/mesmer.jpg" | relURL }}" alt="Mesmer art piece" />
+    <video autoplay loop muted playsinline>
+        <source src="{{ "images/pride.webm" | relURL }}" type="video/webm" />
+        <source src="{{ "images/pride.mp4" | relURL }}" type="video/mp4" />
+    </video>
+    <img src="{{ "images/smoke.jpg" | relURL }}" alt="Smoke art piece" />
+    <img src="{{ "images/redline86.jpg" | relURL }}" alt="Redline 86 art piece" />
+    <img src="{{ "images/dimension.jpg" | relURL }}" alt="Dimension art piece" />
+    <img src="{{ "images/portal.jpg" | relURL }}" alt="Portal art piece" />
+    <img src="{{ "images/hand.jpg" | relURL }}" alt="Hand art piece" />
+    <img src="{{ "images/sploosh.jpg" | relURL}}" alt="Sploosh art piece" />
+    <img src="{{ "images/tree.jpg" | relURL }}" alt="Tree art piece" />
+</div>
+{{ end }}

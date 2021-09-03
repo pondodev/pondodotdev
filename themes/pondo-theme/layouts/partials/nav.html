@@ -1,0 +1,15 @@
+<nav>
+    <ul>
+        <!--<li><a class="current-nav-item" href="/index">Home</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/3dart">3D Art</a></li>-->
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <li>
+            <a{{ if ($currentPage.HasMenuCurrent "main" .) }}class="current-nav-item"{{ end }} href="{{ .URL }}">
+                {{ .Name }}
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</nav>

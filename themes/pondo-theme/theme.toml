@@ -1,0 +1,10 @@
+name = "pondo theme"
+description = "theme for my personal site, pondo.dev"
+homepage = "https://pondo.dev/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Daniel Coady"
+  homepage = "https://pondo.dev/"

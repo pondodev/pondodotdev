@@ -1,0 +1,85 @@
+{{ define "styles" }}
+<link href="{{ "css/index.css" | relURL }}" type="text/css" rel="stylesheet" />
+<link href="{{ "css/index-colors.css" | relURL }}" type="text/css" rel="stylesheet" />
+
+<link href="{{ "css/responsive-index.css" | relURL }}" type="text/css" rel="stylesheet" />
+{{ end }}
+
+{{ define "main" }}
+<p class="accented-content">
+    Full Stack Developer, Games Programmer, and UI/UX Designer
+    from Melbourne, Australia. I've got interests ranging from
+    low level computing to photography, and I'm always looking
+    for new challenges and experiences to broaden my horizons.
+    In fact, I'm probably working on something on the side
+    right now!
+</p>
+
+<h2 class="section-header">Skills</h2>
+<div class="skills-container">
+    <div>
+        <h3 class="section-subheader">Languages</h3>
+        <ul>
+            <li>C++</li>
+            <li>C#</li>
+            <li>Rust</li>
+            <li>GLSL/HLSL</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript/TypeScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3 class="section-subheader">Software</h3>
+        <ul>
+            <li>Git</li>
+            <li>Jira</li>
+            <li>Linux</li>
+            <li>Unity</li>
+            <li>Blender</li>
+            <li>FMOD Studio</li>
+        </ul>
+    </div>
+
+    <div>
+        <h3 class="section-subheader">Libraries/Frameworks</h3>
+        <ul>
+            <li>Angular</li>
+            <li>RxJS</li>
+            <li>FMOD for Unity</li>
+            <li>OpenGL (basic knowledge)</li>
+        </ul>
+    </div>
+</div>
+
+<h2 class="section-header" id="contactme">Contact Me</h2>
+<p>
+    If you'd like to get in touch via email, whether it's for work or just for a chat then
+    please fill out the form below and I'll respond to you as soon as I can!
+</p>
+<form action="https://formspree.io/f/xqkgladp" method="POST">
+    <div class="responsive-form">
+        <div class="responsive-form-column">
+            <label class="required" for="name">Name</label>
+            <input type="text" name="name" id="name" required />
+
+            <label class="required" for="subject">Subject</label>
+            <input type="text" name="subject" id="subject" required />
+
+            <label class="required" for="email">Email</label>
+            <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="flex-break"></div>
+
+        <div class="responsive-form-column">
+            <label class="required" for="message">Message</label>
+            <textarea name="message" id="message" class="responsive-form-message-field" required></textarea>
+        </div>
+    </div>
+
+    <input type="submit" value="Send it!" />
+</form>
+{{ end }}
